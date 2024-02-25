@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="../static/CSS/project-create.css">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+  </head>
+  <body>
+    <div class="project-page">
+        <img src="{% static '/images/Projectimage.jpg' %}" alt="Project Image" />
+      <form method="POST" action="{% url 'post_project' %}">
+          {% csrf_token %}
+        <label for="project-name">Project Title:</label><br />
+          <div class="input-area">{{ form.title }}</div>
+        <label for="project-description">Project Description:</label><br />
+          <div class="input-area">
+          {{ form.description }}
+          </div>
+        <br/><br />
+
+        <label for="required-skills">Required Skills:</label><br />
+          <div class="input-area">{{ form.skills }}</div>
+        <br /><br />
+
+        <label for="other-details">Other Project Details:</label><br />
+          <div class="input-area">{{ form.details }}</div>
+        <br /><br />
+<button class="submit" onclick="window.location.href='home-page.html'">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>

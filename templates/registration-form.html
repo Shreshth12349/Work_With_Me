@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <link rel="stylesheet" href="../static/CSS/registration-form.css">
+</head>
+<body>
+<div id="blob"></div>
+    <div class="container">
+        <h2>Register</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_username">Username:</label>
+            {{ form.username }}
+            <label for="id_first_name">First Name:</label>
+            {{ form.first_name }}
+            <label for="id_last_name">Last Name:</label>
+            {{ form.last_name }}
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+            <label for="id_university_name">University Name:</label>
+            {{ form.university_name }}
+            <label for="id_university_year">University Year:</label>
+            {{ form.university_year }}
+            <label for="id_password">Password:</label>
+            {{ form.password }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+
+
+
+document.addEventListener("mousemove", function(e) {
+    const blob = document.getElementById("blob");
+    const x = e.clientX;
+    const y = e.clientY;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const offsetX = (x - centerX) / 10;
+    const offsetY = (y - centerY) / 10;
+
+    blob.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+});
+    </script>
+</body>
+</html>

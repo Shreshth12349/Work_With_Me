@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.circle {
+  z-index: 1;
+  position: absolute;
+  top: 22%;
+  right: 7%;
+  width: 650px;
+  height: 500px;
+  border-radius: 15rem;
+  opacity: 60%;
+
+  background: radial-gradient(
+      92.71% 92.71% at 7.59% 128.39%,
+      #ffeec2 0%,
+      rgba(255, 238, 194, 0.21) 60.42%,
+      rgba(194, 233, 255, 0) 100%
+    ),
+    radial-gradient(
+      49.19% 88.28% at 27.01% -13.54%,
+      rgba(93, 227, 236, 0.73) 0%,
+      rgba(93, 227, 236, 0.1679) 59.78%,
+      rgba(93, 227, 236, 0) 100%
+    ),
+    radial-gradient(
+      114.51% 155.86% at 90.18% 89.06%,
+      rgba(254, 75, 139, 0.7) 0%,
+      rgba(254, 75, 139, 0) 100%
+    ),
+    linear-gradient(
+      237.32deg,
+      #454abb 18.14%,
+      rgba(69, 74, 187, 0.76) 31.3%,
+      rgba(69, 74, 187, 0.39) 49.35%,
+      rgba(91, 196, 230, 0) 76.77%
+    ),
+    radial-gradient(
+      118.75% 118.75% at 3.35% 25.78%,
+      #308ee6 0%,
+      rgba(48, 158, 230, 0) 73.91%,
+      #f2f5fa
+    );
+  background-blend-mode: normal, hard-light, normal, darken, normal, normal;
+  filter: blur(90px);
+}
+
+* {
+  margin: 0;
+  background-color: black;
+}
+
+.home_page {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5rem 4rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+nav .info {
+  color: whitesmoke;
+  font-size: 10px;
+  font-family: "Nanum Gothic";
+  font-weight: light;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+nav svg {
+  height: 40px;
+}
+
+.button01 {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+#username{
+  font-family: 'Nanum Gothic';
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+}
+
+.container-1 {
+  height: 84vh;
+  width: 100%;
+  display: flex;
+
+}
+
+.text-container {
+  height: 84vh;
+  width: 50%;
+  background-color: none;
+}
+
+.text-container h1 {
+  font-family: "Poppins";
+  font-size: 5rem;
+  font-weight: 550;
+  line-height: 1.2;
+  color: white;
+  position: relative;
+  top: 16%;
+  left: 10%;
+
+}
+
+
+#know_more {
+  position: relative;
+  top: 25%;
+  left: 12%;
+}
+
+.container-1 img{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+
+    height: 500px;
+    z-index: 3;
+    border-radius: 4%;
+}
+
+.button_container{
+  flex-direction: row;
+  gap: 10px;
+}
